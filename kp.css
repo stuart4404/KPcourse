@@ -1,0 +1,20 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+}
+
+.parent {
+    background-color: coral;
+    padding: 2em;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.child {
+    background-color: burlywood;
+    height: 10em;
+    width: 80%;
+    margin: 0 auto;
+}
