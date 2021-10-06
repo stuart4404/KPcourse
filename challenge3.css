@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: "roboto";
+    font-family: 'roboto';
     font-weight: 700;
     font-style: normal;
 }
@@ -16,7 +16,9 @@
 h2{
     font-size: 7vmin;
     font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
 #text{
     color:aliceblue;
     width: 50%;
