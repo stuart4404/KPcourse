@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -29,14 +22,13 @@ body {
     font-size: 1.3rem;
 }
 
-
+img {
+    max-width: 100%;
+}
 
 h1 {
     font-size: 3rem;
-}
-
-h2{
-    color: blueviolet;
+    margin-top: 0;
 }
 
 .container {
@@ -45,32 +37,12 @@ h2{
     margin: 0 auto;
 }
 
-
-
-.color {
-    color: #FFF;
-    background-color: rgb(48, 134, 204);
-    padding: 100px;
-  
-}
-
-.section2 h2{
-    color: blueviolet;
-    padding: 3rem;
-    text-align: center;
-}
-
-.section3{
-    color:azure;
-    background-color: rgb(25, 90, 90);
-    padding: 3rem;
-    text-align: center;
-}
-
 .row {
     /* display: flex => flex container */
     display: flex;
-
+    justify-content: space-between;
+    align-items: flex-start;
+    
     /* can't use yet */
     /* gap: 100px; */
 }
@@ -78,25 +50,57 @@ h2{
 .col {
     /* these are now flex items */
     width: 100%;
-    margin-bottom: 3rem;
 }
 
 .col + .col {
     margin-left: 30px;
 }
 
+
+
 .hero {
     padding: 100px 0;
     background-color: #23424A;
     color: #FFF;
+    margin-bottom: 5rem;
 }
 
-.hero__text {
-    width: 60%;
+.hero__text { 
+    width: 62%;
+    
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
 }
 
 .hero p {
     margin-bottom: 3em;
+}
+
+.text_block{
+    background-color: #FFF ;
+    color: black;
+    width: 62%;
+   
+}
+
+.text_block h2 {
+    color: #136C72;
+    width: 62%;
+}
+
+.section2{
+    background-color: #FFF;
+}
+
+.sidebar{
+    background-color: #136C72;
+    color: #FFF;
+    width: 32%;
+    padding:1rem;
+
 }
 
 .btn {
