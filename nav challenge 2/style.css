@@ -80,6 +80,7 @@ header {
     font-size: 1.2em;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    
 }
 
 .nav__link{
@@ -154,6 +155,13 @@ header {
     position: relative;
 } 
 
+.nav__link--button{
+    background-color: #FFF;
+    border-radius: 100px;
+    width: 75px;
+    color: #23424A;
+}
+
 
 .logo {
     height: 30px;
@@ -200,16 +208,38 @@ header {
     .nav {
         visibility: visible;
         display: flex;
-        max-height: 30px
         height: auto;
-        width: 80%;
+        
+        
     }
 
-    .row {
+    .nav__list{
+        list-style: none;
+       
+        display: inline-block;
+    }
+    
+    .row{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
 
+    .nav__list--primary{
+        margin-right: auto;
+        display: inline;
+    }
+
+    .nav__list--secondary{
+        margin-left: auto;
+    }
+    
+    .pad{
+        padding: 2rem;
+    }
+    
+    .logo{
+        margin-right: auto;
     }
 
     .hero__text {
@@ -228,7 +258,13 @@ header {
 
     .sidebar {
         width: 32%;
+    } 
+
+    header{
+        height: auto;
+        
     }
+
 
     
     
